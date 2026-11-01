@@ -1,0 +1,57 @@
+<svg xmlns="http://www.w3.org/2000/svg"
+     width="1200" height="400" viewBox="0 0 1200 400"
+     role="img" aria-labelledby="hero-title hero-desc">
+  <title id="hero-title">梁迪臻 — 长任务 Agent 运行时与评测治理</title>
+  <desc id="hero-desc">左侧为姓名与定位：构建可观测、可审计、可回放的长任务 Agent 系统。右侧为 Apex-Agent 的单权威架构：Temporal Workflow 是唯一执行权威，Activity 是唯一写入口，PostgreSQL 与 Live Canvas 均为派生投影，失败后可确定性重放。</desc>
+
+  <rect width="1200" height="400" rx="26" fill="#0B0F17"/>
+
+  <!-- identity -->
+  <g id="title-block" transform="translate(64 48)">
+    <text x="0" y="22" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="18" letter-spacing="3" fill="#38BDF8">AGENT RUNTIME · EVAL GOVERNANCE</text>
+    <text x="0" y="96" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', 'Microsoft YaHei', sans-serif" font-size="58" font-weight="700" fill="#E6EDF3">梁迪臻</text>
+    <text x="0" y="140" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', 'Microsoft YaHei', sans-serif" font-size="22" fill="#C9D1D9">构建可观测、可审计、可回放的长任务 Agent 系统</text>
+    <line x1="0" y1="172" x2="540" y2="172" stroke="#232B3A" stroke-width="1"/>
+    <text x="0" y="208" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', 'Microsoft YaHei', sans-serif" font-size="20" fill="#8B949E">Agent Harness · Workflow 编排 · 评测治理</text>
+    <text x="0" y="244" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="18" fill="#8B949E">TypeScript · Temporal · PostgreSQL · Kafka · Milvus</text>
+    <text x="0" y="278" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="18" fill="#F59E0B">github.com/DizhenLiang</text>
+  </g>
+
+  <!-- project proof: single-authority architecture -->
+  <g id="project-proof" transform="translate(676 44)">
+    <rect x="0" y="0" width="472" height="320" rx="16" fill="#111722" stroke="#232B3A" stroke-width="1"/>
+    <text x="24" y="34" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="18" letter-spacing="1" fill="#38BDF8">APEX AGENT · 单权威架构</text>
+    <text x="24" y="58" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', 'Microsoft YaHei', sans-serif" font-size="16" fill="#6E7681">执行权威唯一 · 其余皆为派生视图</text>
+
+    <!-- authority node -->
+    <rect x="24" y="78" width="250" height="62" rx="10" fill="#132033" stroke="#38BDF8" stroke-width="1.5"/>
+    <text x="40" y="110" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', 'Microsoft YaHei', sans-serif" font-size="20" font-weight="600" fill="#E6EDF3">Temporal Workflow</text>
+    <text x="40" y="132" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', 'Microsoft YaHei', sans-serif" font-size="14" fill="#38BDF8">唯一执行权威</text>
+
+    <!-- arrow -->
+    <line x1="149" y1="140" x2="149" y2="154" stroke="#3B4A60" stroke-width="2"/>
+    <path d="M149 158 L143 148 L155 148 Z" fill="#3B4A60"/>
+
+    <!-- activity node -->
+    <rect x="24" y="158" width="250" height="56" rx="10" fill="none" stroke="#2A3444" stroke-width="1"/>
+    <text x="40" y="188" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', 'Microsoft YaHei', sans-serif" font-size="20" fill="#E6EDF3">Activity</text>
+    <text x="40" y="208" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', 'Microsoft YaHei', sans-serif" font-size="14" fill="#6E7681">单写入口 · 副作用</text>
+
+    <!-- arrow -->
+    <line x1="149" y1="214" x2="149" y2="228" stroke="#3B4A60" stroke-width="2"/>
+    <path d="M149 232 L143 222 L155 222 Z" fill="#3B4A60"/>
+
+    <!-- projection node -->
+    <rect x="24" y="232" width="250" height="56" rx="10" fill="none" stroke="#2A3444" stroke-width="1"/>
+    <text x="40" y="262" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', 'Microsoft YaHei', sans-serif" font-size="20" fill="#E6EDF3">派生投影</text>
+    <text x="40" y="282" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="14" fill="#6E7681">PG · Canvas · 轨迹</text>
+
+    <!-- deterministic replay loop -->
+    <path d="M286 260 C 336 260, 336 109, 286 109" fill="none" stroke="#F59E0B" stroke-width="1.5" stroke-dasharray="5 5"/>
+    <path d="M286 109 L296 104 L296 114 Z" fill="#F59E0B"/>
+    <text x="348" y="176" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', 'Microsoft YaHei', sans-serif" font-size="15" fill="#F59E0B">崩溃后</text>
+    <text x="348" y="196" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', 'Microsoft YaHei', sans-serif" font-size="15" fill="#F59E0B">确定性重放</text>
+
+    <text x="24" y="306" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="15" fill="#6E7681">预注册 A/B · 配对 Wilcoxon · fail-loud</text>
+  </g>
+</svg>
